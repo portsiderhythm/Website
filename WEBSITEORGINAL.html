@@ -1,0 +1,95 @@
+<html>
+<head>
+<h2>Reader's club</h2>
+<style>
+h1 {
+  color: white;
+}
+
+h1 span:nth-child(1) {
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan;
+  animation: glow-cyan 10s infinite; /* Add this line to animate the text-shadow */
+}
+
+h1 span:nth-child(2) {
+  text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink, 0 0 50px pink;
+}
+</style>
+</head>
+
+
+<h1><span style="text-decoration-color: blue;">PortSide </span><span style="text-decoration-color: pink;animation: glow-pink 10s infinite;"> Rhythms</span></h1> <!-- Use a single h1 tag with two span elements to display the text side by side -->
+<style>
+@keyframes glow-cyan {
+    /* Define the animation for the blue text-shadow */
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0
+            40px
+            cyan,
+            0
+                0
+                50px
+                cyan;
+    }
+}
+
+@keyframes glow-pink {
+    /* Define the animation for the pink text-shadow */
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0
+            0
+            10px
+            pink,
+            0
+                0
+                20px
+    
+            pink,
+            0
+                0
+                30px
+                pink,
+            0
+                0
+                40px
+                pink,
+            0
+                0
+                50px
+                pink;
+    }
+}
+</style>
+
+<body>
+<style>
+body {
+    background-image: url("headphone.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+
+    animation: fadein fadein; /* Add this line to animate the body opacity */
+}
+@keyframes fadein {
+    from {
+        opacity: none;
+    }
+    to {
+        opacity: none;
+    }
+}
+</style>
+
+<h2>Podcast</h2>
+<audio controls>
+<source src="1.mp3" type="audio/mpeg" />
+
+</html>
