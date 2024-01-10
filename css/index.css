@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@font-face {
+  font-family: Priego;
+  src: url('../fonts/Priego/Fontspring-DEMO-priego-bold.otf');
+}
 
 :root {
   --white-color:                  #ffffff;
@@ -12,7 +16,7 @@
   --border-color:                 #7fffd4;
   --link-hover-color:             #B22727;
 
-  --body-font-family:             'Outfit', sans-serif;
+  --body-font-family:             Priego;
 
   --h1-font-size:                 74px;
   --h2-font-size:                 46px;
@@ -34,6 +38,7 @@
 }
 
 body {
+  color: #fff;
   background-color: var(--white-color);
   font-family: var(--body-font-family); 
 }
@@ -212,7 +217,7 @@ strong {
 }
 
 .section-overlay {
-  background-color: white;
+  background-color: #1b1b1b;
   position: absolute;
   top: 0;
   left: 0;
@@ -227,7 +232,7 @@ strong {
 
 .text-heading {
   color: transparent;
-  background-image: linear-gradient(140deg, #ff5b00, #2b2a29);
+  background-image: linear-gradient(140deg, #c3b3ee, #b5cff8);
   background-clip: text;
   margin: 0;
 }
@@ -331,14 +336,14 @@ strong {
   z-index: -100;
 }
 
-.custom-video {
+.custom-img {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   width: 100%;
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.75;
 }
 
 
@@ -368,6 +373,8 @@ strong {
 
 .navbar {
   background: transparent;
+  backdrop-filter: blur(3px);
+  outline: 1px solid #404040;
   z-index: 9;
 }
 
@@ -945,6 +952,7 @@ strong {
 
   .navbar-expand-lg .navbar-nav {
     padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -1066,7 +1074,7 @@ strong {
   }
   .control-panel {
     position: relative;
-    background-color: #fff;
+    background-color: rgba(50, 50, 50, 0.5);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -1074,7 +1082,12 @@ strong {
     width: 100%;
     height: 80px;
     z-index: 5;
+    backdrop-filter: blur(2px);
     /* box-shadow: 0px 4px 10px 0px rgba(132, 132, 132, 0.3); */
+
+  .fas {
+    color: #fff;
+  }
     
     @keyframes rotation {
       0% {
