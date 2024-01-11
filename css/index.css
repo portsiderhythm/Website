@@ -218,6 +218,7 @@ strong {
 
 .section-overlay {
   background-color: #1b1b1b;
+  background-image: url("/Website/images/BG-Lines.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -1051,6 +1052,7 @@ strong {
     }
 
     .progress-bar {
+      overflow: visible;
       background-color: #ddd;
       height: 2px;
       width: 100%;
